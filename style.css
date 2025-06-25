@@ -1,0 +1,454 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background:rgb(0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    font: weight 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered,
+                 0 0 50px orangered;
+    transform: scale(1.1);
+}
+span{
+    color: orangered;
+}
+.navbar a{
+    font-size: 18px;
+    color:white;
+    font-weight: 500;
+    margin:0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+
+}
+.navbar a:hover,
+.navbar a.active{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+.contact{
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: o.3s ease;
+}
+.contact:hover{
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    color: white;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241,241,241);
+    display: flex;
+    align-items: center;
+    gap:7em;
+    padding: 30px 12% 0;
+}
+.home-ceontent{
+    max-width: 800px;
+}
+.home-ceontent h3{
+    font-size: 42px;
+}
+.home-ceontent h1{
+    font-size: 62px;
+    line-height: 1.2;
+}
+.home-ceontent p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap:2em;
+}
+.btn-1{
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-1:hover{
+    background-color:white ;
+    color: black;
+    border: 2px solid black;
+}
+.btn-2{
+    padding: 15px 28px;
+    background-color: orangered;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: white;
+    color: orangered;
+}
+.img-box img{
+    border-radius: 50%;
+    width: 500px;
+    height: 700px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0,0,0,0.6);
+    width: 50px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap:10em;
+    background: black;
+}
+.about-img img{
+    position: relative;
+    width: 550px;
+    box-shadow: 0 0 25px orangered,
+                0 0 50px orangered;
+    border-radius: 50%;
+}
+.about-ceontent h2{
+    text-align: left;
+    color: white;
+    font-size: 42px;
+}
+.about-ceontent h3{
+    font-size: 62px;
+    color: white;
+}
+.about-ceontent p{
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+
+.contact-form h2{
+    text-align: center;
+    margin-top: 3em;
+    margin: 1em;
+    font-size: 36px;
+}
+.contact-form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.contact-form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact-form form .input-box input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background: rgb(241,241,241);
+    border-radius: .8rem;
+    margin:1rem 0;
+    resize: none;
+}
+
+
+
+
+main {
+  padding: 120px 12%;
+  background: rgb(241, 241, 241);
+  min-height: 100vh;
+}
+
+.certificates h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: orangered;
+  text-align: left;
+}
+
+.cert-image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  gap: 30px;
+}
+
+.cert-item {
+  text-align: left;
+}
+
+.cert-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 0; /* no rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cert-item p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #333;
+}
+
+
+
+
+
+.education {
+  padding: 80px 12%;
+  background: rgb(241, 241, 241);
+  color: #111;
+}
+
+.education h2 {
+  font-size: 36px;
+  color: orangered;
+  margin-bottom: 30px;
+}
+
+.edu-card {
+  background: white;
+  padding: 20px 25px;
+  margin-bottom: 30px;
+  border-left: 5px solid orangered;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.edu-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.edu-card ul {
+  padding-left: 20px;
+}
+
+.edu-card li {
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.skills-section {
+  padding: 100px 20px 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.skills-section h2 {
+  color: #ff5722;
+  margin-top: 40px;
+  font-size: 1.6em;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.skills-section ul {
+  padding-left: 20px;
+}
+
+.skills-section li {
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .skills-section {
+    padding: 80px 15px 40px;
+  }
+}
+
+
+
+.contact-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-section h2 {
+  color: #007BFF;
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.contact-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-section ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-section a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+.footer .social a{
+    font-size: 24px;
+    color: white;
+    border: 2px solid orangered;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px orangered,0 0 10px orangered;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    color: orangered;
+    border: 2px solid orangered;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid orangered;
+
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
